@@ -1,5 +1,5 @@
 <?php
-    require "app.php";
+    require "db.php";
     $app = new DB;
         $countryId = $_POST['countryId'];
         $query = "SELECT * FROM region where r_country_id = ?";

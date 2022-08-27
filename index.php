@@ -52,7 +52,7 @@ require "lang.php";
                     <div class="submenu">
                         <ul class="list-group">
                             <?php foreach ($arr as $row) : ?>
-                                <li class="list-group-item" onclick="getCountryId(<?php echo $row['id'] ?>)">
+                                <li class="list-group-item" onmouseover="getCountryId(<?php echo $row['id'] ?>)">
                                     <?php if ($_SESSION['lang'] == 'rus') : ?>
                                         <p><?php echo $row['c_name_rus'] ?></p>
                                     <?php elseif ($_SESSION['lang'] == 'eng') : ?>
@@ -101,25 +101,25 @@ require "lang.php";
                     country.data.forEach((c) => {
                         if (language == 'rus') {
                             html += `
-                            <li class="list-group-item" onclick="getRegionId(${c.id}, ${c.r_country_id})">
+                            <li class="list-group-item" onmouseover="getRegionId(${c.id}, ${c.r_country_id})">
                                 <p>${c.r_name_rus}</p>
                             </li>
                             `;
                         } else if (language == 'eng') {
                             html += `
-                            <li class="list-group-item" onclick="getRegionId(${c.id}, ${c.r_country_id})">
+                            <li class="list-group-item" onmouseover="getRegionId(${c.id}, ${c.r_country_id})">
                                 <p>${c.r_name_eng}</p>
                             </li>
                             `;
                         } else if (language == 'ger') {
                             html += `
-                            <li class="list-group-item" onclick="getRegionId(${c.id}, ${c.r_country_id})">
+                            <li class="list-group-item" onmouseover="getRegionId(${c.id}, ${c.r_country_id})">
                                 <p>${c.r_name_ger}</p>
                             </li>
                             `;
                         } else {
                             html += `
-                            <li class="list-group-item" onclick="getRegionId(${c.id}, ${c.r_country_id})">
+                            <li class="list-group-item" onmouseover="getRegionId(${c.id}, ${c.r_country_id})">
                                 <h3>${c.r_name_rus}</h3>
                             </li>
                             `;

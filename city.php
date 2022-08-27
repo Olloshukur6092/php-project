@@ -1,5 +1,5 @@
 <?php
-    require "app.php";
+    require "db.php";
     $app = new DB;
         $countryId = $_POST['c_id'];
         $regionId = $_POST['r_id'];
